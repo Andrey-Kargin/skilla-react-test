@@ -1,0 +1,38 @@
+.call-row {
+  border-top: 1px solid rgba(234, 240, 250, 1);
+  height: 65px;
+
+  &__time {
+    text-align: left;
+  }
+
+  &__avatar {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  &__avatar-img {
+    object-fit: cover;
+    object-position: center;
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+  }
+
+  &__error {
+    color: rgba(234, 26, 79, 1);
+  }
+
+  &__player-cell {
+    width: 528px;
+  }
+
+  &__duration {
+    text-align: right;
+  }
+}

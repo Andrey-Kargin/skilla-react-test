@@ -1,0 +1,100 @@
+.audio-player {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 25px;
+  background: rgba(234, 240, 250, 0.99);
+  border-radius: 48px;
+
+  .time-display {
+    font-family: monospace;
+    font-size: 14px;
+  }
+
+  .play-button,
+  .download-button,
+  .stop-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px 8px;
+  }
+
+  .play-button {
+    background: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+  }
+
+  .play-button:hover,
+  .download-button:hover,
+  .stop-button:hover {
+    background: #e0e0e0;
+    border-radius: 4px;
+  }
+
+  .progress-bar {
+    flex-grow: 1;
+    height: 4px;
+    cursor: pointer;
+  }
+
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    width: 0;
+    height: 0;
+    border: none;
+  }
+
+  .progress-container {
+    position: relative;
+    flex-grow: 1;
+  }
+
+  .time-tooltip {
+    position: absolute;
+    bottom: 100%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 4px;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    border-radius: 2px;
+  }
+
+  .progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #1a73e8;
+    cursor: pointer;
+  }
+}
